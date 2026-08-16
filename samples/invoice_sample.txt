@@ -1,0 +1,28 @@
+NORDWIND SUPPLIES GmbH
+Hafenstrasse 14, 20359 Hamburg, Germany
+VAT ID: DE123456789
+billing@nordwind-supplies.example   +49 40 555 01 22
+
+INVOICE
+
+Invoice No.: NW-2026-04871
+Invoice date: 05.08.2026
+Due date: 19.08.2026
+Customer: Meridian Analytics Ltd, 12 Fenchurch Ave, London
+
+--------------------------------------------------------------
+Position                        Qty     Unit price      Amount
+--------------------------------------------------------------
+Data extraction service          40        45,00      1.800,00
+Scheduled report delivery         1       120,00        120,00
+Priority support (monthly)        1        95,00         95,00
+--------------------------------------------------------------
+Net amount                                            2.015,00
+VAT 19%                                                 382,85
+Gesamtbetrag                                        2.397,85 EUR
+
+Payment within 14 days to:
+IBAN: DE89 3704 0044 0532 0130 00
+BIC: COBADEFFXXX
+
+Questions? accounts@nordwind-supplies.example
