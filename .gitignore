@@ -1,0 +1,24 @@
+# Secrets and credentials
+.env
+service_account.json
+*credentials*.json
+*.pem
+
+# Runtime data (the committed example lives in samples/)
+data/
+*.csv
+!samples/*.csv
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
