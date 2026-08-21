@@ -1,7 +1,5 @@
 # automation-pipelines
 
-Sample project demonstrating production web-scraping / automation patterns.
-
 An n8n workflow plus the Python service it calls: a webhook arrives, Python
 cleans, validates, scores and de-duplicates the payload, then it is written to
 CSV and Google Sheets and announced in Slack. A second module reads a PDF or
