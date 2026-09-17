@@ -1,5 +1,7 @@
 # automation-pipelines
 
+[![CI](https://github.com/dkautomation23/automation-pipelines/actions/workflows/ci.yml/badge.svg)](https://github.com/dkautomation23/automation-pipelines/actions/workflows/ci.yml)
+
 An n8n workflow plus the Python service it calls: a webhook arrives, Python
 cleans, validates, scores and de-duplicates the payload, then it is written to
 CSV and Google Sheets and announced in Slack. A second module reads a PDF or
