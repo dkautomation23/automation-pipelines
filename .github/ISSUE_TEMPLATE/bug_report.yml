@@ -1,0 +1,53 @@
+name: Bug report
+description: Something behaves differently from what the README says
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not paste WEBHOOK_TOKEN, a Google service-account key, or real
+        lead/customer data (names, emails, phone numbers). Replace them with
+        placeholders that keep the same shape.
+
+        Found a security hole instead? Do not use this form — see SECURITY.md.
+  - type: input
+    id: python-version
+    attributes:
+      label: Python version
+      placeholder: "3.10 or 3.12 (CI's tested versions)"
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: "Windows 11 / Ubuntu 22.04 / macOS 14"
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Exact command or request
+      description: >-
+        The curl/HTTP request (method, path, headers with the token value
+        removed) or the CLI command, e.g.
+        `curl -X POST http://localhost:8000/webhook/lead -H "X-Webhook-Token: <redacted>" -d @payload.json`
+      render: console
+    validations:
+      required: true
+  - type: textarea
+    id: input
+    attributes:
+      label: Input data
+      description: >-
+        The JSON body or file you sent, with real names, emails, and phone
+        numbers replaced by placeholders. Never paste WEBHOOK_TOKEN or a
+        Google credentials file.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected, and what happened instead
+    validations:
+      required: true
