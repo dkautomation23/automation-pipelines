@@ -91,7 +91,11 @@ curl -X POST http://localhost:8000/webhook/lead \
   -d @samples/lead_payload.json
 ```
 
-Input (`samples/lead_payload.json`) — deliberately messy, like a real form:
+Input (`samples/lead_payload.json`) — deliberately messy, like a real form.
+The name, company, email and phone in every sample are invented: no real
+person's details are in this repository, and none should ever be committed
+to it.
+
 
 ```json
 {
