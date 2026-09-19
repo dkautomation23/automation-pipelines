@@ -5,7 +5,7 @@ pydantic>=2.7
 # FastAPI needs this for the UploadFile endpoint; it is not a FastAPI dependency.
 python-multipart>=0.0.9
 python-dotenv>=1.0
-requests>=2.32
+requests>=2.34.2
 
 # Google Sheets sink (optional - only needed when SHEETS_ENABLED=true)
 gspread>=6.0
