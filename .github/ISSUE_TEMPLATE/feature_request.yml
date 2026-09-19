@@ -1,0 +1,29 @@
+name: Feature request
+description: Ask for something the tool does not do yet
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Check the README first — the flow is deliberately "n8n owns the
+        plumbing, Python owns the logic that would be painful inside a
+        no-code node." Moving plumbing into Python, or logic into n8n, needs
+        a reason, not just a preference.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to get done?
+      description: The situation, not the feature. The feature you are asking for may not be the right answer.
+    validations:
+      required: true
+  - type: textarea
+    id: today
+    attributes:
+      label: How do you do it today?
+      description: What you run now, and where it falls short.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Anything this should not break
