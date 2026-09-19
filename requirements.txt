@@ -12,7 +12,7 @@ gspread>=6.0
 google-auth>=2.30
 
 # Document extraction
-pdfplumber>=0.11
+pdfplumber>=0.11.10
 
 # Development / tests
 pytest>=8.0
