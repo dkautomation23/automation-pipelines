@@ -1,6 +1,6 @@
 # Webhook service
 fastapi>=0.115
-uvicorn[standard]>=0.30
+uvicorn[standard]>=0.53.0
 pydantic>=2.7
 # FastAPI needs this for the UploadFile endpoint; it is not a FastAPI dependency.
 python-multipart>=0.0.9
