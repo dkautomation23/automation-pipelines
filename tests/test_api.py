@@ -48,13 +48,13 @@ def test_lead_is_cleaned_stored_and_echoed(client, tmp_path):
 
     body = response.json()
     assert body["status"] == "accepted"
-    assert body["lead"]["email"] == "anna.schmidt@gmail.com"   # typo domain fixed
-    assert body["lead"]["phone"] == "+491705552418"
+    assert body["lead"]["email"] == "erika.mustermann@example.com"   # typo domain fixed
+    assert body["lead"]["phone"] == "+4930231250"
     assert body["lead"]["budget_eur"] == 3000.0
     assert body["sinks"]["csv"]["ok"] is True
 
     csv_text = (tmp_path / "leads.csv").read_text(encoding="utf-8-sig")
-    assert "anna.schmidt@gmail.com" in csv_text
+    assert "erika.mustermann@example.com" in csv_text
     assert csv_text.splitlines()[0].startswith("lead_id,received_at,name")
 
 

@@ -1,7 +1,7 @@
 NORDWIND SUPPLIES GmbH
 Hafenstrasse 14, 20359 Hamburg, Germany
 VAT ID: DE123456789
-billing@nordwind-supplies.example   +49 40 555 01 22
+billing@nordwind-supplies.example   +49 30 231 25 2
 
 INVOICE
 

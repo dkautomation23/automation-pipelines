@@ -16,7 +16,7 @@ from webhook_service.cleaning import (
     "raw,expected",
     [
         ("  john   O'BRIEN ", "John O'Brien"),
-        ("ANNA SCHMIDT", "Anna Schmidt"),
+        ("ERIKA MUSTERMANN", "Erika Mustermann"),
         ("McDonald", "McDonald"),          # deliberate casing is preserved
         ("piet van beek", "Piet van Beek"),  # particles stay lower-case
         (None, ""),
@@ -27,9 +27,9 @@ def test_clean_name(raw, expected):
 
 
 def test_clean_email_fixes_typo_domains_and_flags_them():
-    email, issues = clean_email(" Anna.Schmidt@GMIAL.COM ")
-    assert email == "anna.schmidt@gmail.com"
-    assert "email_typo_fixed:gmial.com" in issues
+    email, issues = clean_email(" Erika.Mustermann@EXMAPLE.COM ")
+    assert email == "erika.mustermann@example.com"
+    assert "email_typo_fixed:exmaple.com" in issues
     assert "email_invalid" not in issues
 
 
@@ -45,9 +45,9 @@ def test_clean_email_flags_bad_addresses(raw, flag):
 @pytest.mark.parametrize(
     "raw,expected",
     [
-        ("0049 (170) 555-24-18", "+491705552418"),
+        ("0049 (30) 231-25-0", "+4930231250"),
         ("+44 20 7946 0958", "+442079460958"),
-        ("0170 5552418", "+491705552418"),   # national number gets the default code
+        ("030 231250", "+4930231250"),   # national number gets the default code
         ("12", ""),                          # too short -> rejected
         (None, ""),
     ],
@@ -74,9 +74,9 @@ def test_parse_budget(raw, expected):
 def test_clean_lead_produces_a_complete_record():
     record = clean_lead(
         {
-            "name": "  anna   SCHMIDT ",
-            "email": " Anna.Schmidt@GMIAL.COM ",
-            "phone": "0049 (170) 555-24-18",
+            "name": "  erika   MUSTERMANN ",
+            "email": " Erika.Mustermann@EXMAPLE.COM ",
+            "phone": "0049 (30) 231-25-0",
             "company": "Meridian Analytics Ltd",
             "message": "We scrape 20 supplier sites by hand every Monday and need it automated.",
             "budget": "around 3k EUR",
@@ -84,9 +84,9 @@ def test_clean_lead_produces_a_complete_record():
         }
     )
 
-    assert record["name"] == "Anna Schmidt"
-    assert record["email"] == "anna.schmidt@gmail.com"
-    assert record["phone"] == "+491705552418"
+    assert record["name"] == "Erika Mustermann"
+    assert record["email"] == "erika.mustermann@example.com"
+    assert record["phone"] == "+4930231250"
     assert record["budget_eur"] == 3000.0
     assert record["is_valid"] is True
     assert record["score"] == 100

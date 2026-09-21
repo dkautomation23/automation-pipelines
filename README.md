@@ -99,8 +99,8 @@ to it.
 
 ```json
 {
-  "name": "  anna   SCHMIDT ",
-  "email": " Anna.Schmidt@GMIAL.COM ",
+  "name": "  erika   MUSTERMANN ",
+  "email": " Erika.Mustermann@EXMAPLE.COM ",
   "phone": "0049 (170) 555-24-18",
   "company": "Meridian Analytics Ltd",
   "budget": "around 3k EUR",
@@ -115,14 +115,14 @@ Response:
   "status": "accepted",
   "lead": {
     "lead_id": "eca1c85b8ee0860c",
-    "email": "anna.schmidt@gmail.com",
-    "name": "Anna Schmidt",
-    "phone": "+491705552418",
+    "email": "erika.mustermann@example.com",
+    "name": "Erika Mustermann",
+    "phone": "+4930231250",
     "company": "Meridian Analytics Ltd",
     "budget_eur": 3000.0,
     "score": 100,
     "is_valid": true,
-    "issues": ["email_typo_fixed:gmial.com"],
+    "issues": ["email_typo_fixed:exmaple.com"],
     "received_at": "2026-08-16T07:02:52Z"
   },
   "sinks": { "csv": { "ok": true, "path": "data/leads.csv" } }
@@ -137,8 +137,8 @@ Stored rows (`samples/leads_out.csv`, produced by the run above):
 
 ```csv
 lead_id,received_at,name,email,phone,company,source,budget_eur,score,is_valid,issues,message
-eca1c85b8ee0860c,2026-08-16T07:02:52Z,Anna Schmidt,anna.schmidt@gmail.com,+491705552418,Meridian Analytics Ltd,website_form,3000.0,100,True,email_typo_fixed:gmial.com,...
-70ae7f4153bf9c2f,2026-08-16T07:03:03Z,Piet van Beek,p.vanbeek@example.com,+31205558899,Delta Retail BV,referral,2300.0,100,True,,...
+eca1c85b8ee0860c,2026-08-16T07:02:52Z,Erika Mustermann,erika.mustermann@example.com,+4930231250,Meridian Analytics Ltd,website_form,3000.0,100,True,email_typo_fixed:exmaple.com,...
+70ae7f4153bf9c2f,2026-08-16T07:03:03Z,Piet van Beek,p.vanbeek@example.com,+4930231251,Delta Retail BV,referral,2300.0,100,True,,...
 2803fafb855a7a8f,2026-08-16T07:03:03Z,Bob,bob(at)example.com,,,landing_page,,0,False,email_invalid,...
 ```
 
@@ -156,7 +156,7 @@ due date       : 2026-08-19
 total          : 2397.85 EUR
 vat            : 19.0%  id: DE123456789
 iban           : DE89370400440532013000
-contacts       : accounts@nordwind-supplies.example, billing@nordwind-supplies.example, +49405550122
+contacts       : accounts@nordwind-supplies.example, billing@nordwind-supplies.example, +4930231252
 decision       : needs_review (amount_over_500, due_soon)
 ```
 

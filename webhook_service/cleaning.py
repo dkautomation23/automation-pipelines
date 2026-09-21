@@ -21,6 +21,9 @@ DOMAIN_TYPOS = {
     "hotmial.com": "hotmail.com",
     "outlok.com": "outlook.com",
     "yahho.com": "yahoo.com",
+    # RFC 2606 keeps example.com unregistrable, which makes it the only domain
+    # safe to put in public sample data - and it gets mistyped like any other.
+    "exmaple.com": "example.com",
 }
 DISPOSABLE_DOMAINS = {"mailinator.com", "10minutemail.com", "tempmail.com", "guerrillamail.com"}
 _MULTISPACE = re.compile(r"\s+")

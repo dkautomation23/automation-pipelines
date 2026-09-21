@@ -31,7 +31,7 @@ def test_identifiers_and_contacts(fields):
     assert fields["vat_id"] == "DE123456789"
     assert fields["iban"] == "DE89370400440532013000"
     assert "billing@nordwind-supplies.example" in fields["emails"]
-    assert fields["phones"] == ["+49405550122"]
+    assert fields["phones"] == ["+4930231252"]
     assert fields["missing_fields"] == []
 
 

@@ -1,4 +1,4 @@
 ﻿lead_id,received_at,name,email,phone,company,source,budget_eur,score,is_valid,issues,message
-eca1c85b8ee0860c,2026-08-16T07:02:52Z,Anna Schmidt,anna.schmidt@gmail.com,+491705552418,Meridian Analytics Ltd,website_form,3000.0,100,True,email_typo_fixed:gmial.com,We scrape 20 supplier sites by hand every Monday. Looking for an automated weekly export into Google Sheets.
-70ae7f4153bf9c2f,2026-08-16T07:03:03Z,Piet van Beek,p.vanbeek@example.com,+31205558899,Delta Retail BV,referral,2300.0,100,True,,"Need a daily price monitor for 8 competitor shops, results into Sheets."
+eca1c85b8ee0860c,2026-08-16T07:02:52Z,Erika Mustermann,erika.mustermann@example.com,+4930231250,Meridian Analytics Ltd,website_form,3000.0,100,True,email_typo_fixed:exmaple.com,We scrape 20 supplier sites by hand every Monday. Looking for an automated weekly export into Google Sheets.
+70ae7f4153bf9c2f,2026-08-16T07:03:03Z,Piet van Beek,p.vanbeek@example.com,+4930231251,Delta Retail BV,referral,2300.0,100,True,,"Need a daily price monitor for 8 competitor shops, results into Sheets."
 2803fafb855a7a8f,2026-08-16T07:03:03Z,Bob,bob(at)example.com,,,landing_page,,0,False,email_invalid,call me
